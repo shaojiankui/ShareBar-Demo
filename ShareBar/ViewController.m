@@ -1,13 +1,25 @@
-# ShareBar-Demo
-ShareBar,a custom menu deafult supports share platform,it not a demo,just ui is a demo
+//
+//  ViewController.m
+//  ShareBar
+//
+//  Created by Jakey on 16/3/30.
+//  Copyright © 2016年 www.skyfox.org. All rights reserved.
+//
 
-![image](https://raw.githubusercontent.com/shaojiankui/ShareBar-Demo/master/show.png)
+#import "ViewController.h"
 
-##usage
+@interface ViewController ()
 
-	@property (weak, nonatomic) IBOutlet ShareBar *shareBar;
+@end
 
-	 [self.shareBar activePlatforms:ShareBarPlatformWeixin|ShareBarPlatformWeibo handler:^(ShareBarPlatform platformType) {
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    [self.shareBar activePlatforms:ShareBarPlatformWeixin|ShareBarPlatformWeibo handler:^(ShareBarPlatform platformType) {
         switch (platformType) {
             case ShareBarPlatformWeixin:
             {
@@ -49,8 +61,17 @@ ShareBar,a custom menu deafult supports share platform,it not a demo,just ui is 
     [self.shareBar addPlatform:@"手动添加2" icon:[UIImage imageNamed:@"we.png"] handler:^(id item) {
         NSLog(@"手动添加2");
     }];
+  
+    
+    
+    
+}
 
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 
-
+@end
