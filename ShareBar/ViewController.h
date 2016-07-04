@@ -10,7 +10,7 @@
 #import "ShareBar.h"
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet ShareBar *shareBar;
+- (IBAction)shareTouched:(id)sender;
 
 @end
 

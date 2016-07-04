@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -16,24 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXG-q1-xzV" customClass="ShareBar">
-                                <rect key="frame" x="0.0" y="536" width="600" height="64"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ak9-IU-d1c">
+                                <rect key="frame" x="234" y="272" width="132" height="57"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="QsI-bi-06h"/>
+                                    <constraint firstAttribute="height" constant="57" id="e8Q-We-pEW"/>
+                                    <constraint firstAttribute="width" constant="132" id="uhx-Hc-oFg"/>
                                 </constraints>
-                            </view>
+                                <state key="normal" title="分享"/>
+                                <connections>
+                                    <action selector="shareTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MpQ-dF-K7k"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hXG-q1-xzV" secondAttribute="trailing" id="LAl-M5-HcB"/>
-                            <constraint firstItem="hXG-q1-xzV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dne-VU-EPA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hXG-q1-xzV" secondAttribute="bottom" id="nJM-8s-JgQ"/>
+                            <constraint firstItem="ak9-IU-d1c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X4a-CO-fNV"/>
+                            <constraint firstItem="ak9-IU-d1c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vCV-iR-lbZ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="shareBar" destination="hXG-q1-xzV" id="vac-G0-0pX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
